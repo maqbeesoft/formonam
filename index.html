@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilingual Form with Popup</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="company-header">
+    <img src="Systems and technology programming company logo (1).jpg" alt="Company Logo" class="company-logo">
+    <div class="company-details">
+      <h2 class="company-name">Maqbee Web Design & Development</h2>
+      <p class="company-desc">Celebrating Onam with Maqbee and togetherness!<br>
+      <span style="color:#ff9800;font-weight:bold;">Wishing you a Happy Onam!</span>
+      </p>
+      <div class="company-contact-icons">
+        <a href="mailto:maqbee.soft@gmail.com" title="Email" class="icon-link">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:+917034261603" title="Call" class="icon-link">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://maqbee.vercel.app/" target="_blank" title="Website" class="icon-link">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="https://www.instagram.com/maqbee_/" target="_blank" title="Instagram" class="icon-link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <p class="company-contact">Contact: maqbee.soft@gmail.com | +91 70342 61603</p>
+      <p class="company-website">Website: <a href="https://maqbee.vercel.app/" target="_blank">maqbee.com</a></p>
+      <p class="company-location">Instagram: <a href="https://www.instagram.com/maqbee_/" target="_blank">@maqbee_</a></p>
+    </div>
+  </div>
+  
+  <!-- Onam logo should be placed as 'onam-logo.png' in the same folder -->
+  <div id="content" style="max-width:600px;margin:auto;">
+    <h1 id="title" style="text-align:center;">Welcome</h1>
+    
+    <!-- Cutout Image Section -->
+    <!-- <div class="cutout-image-section">
+      <img src="Systems and technology programming company logo (1).jpg" alt="Software Company" class="cutout-image">
+      <div class="cutout-overlay">
+        <h2>Innovation & Excellence</h2>
+        <p>Leading the future of software development with cutting-edge solutions and professional expertise</p>
+      </div>
+    </div> -->
+    
+    <form onsubmit="handleSubmit(event)">
+      <label for="name" id="label-name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="place" id="label-place">Place:</label>
+      <input type="text" id="place" name="place" required>
+      <label for="age" id="label-age">Age:</label>
+      <input type="number" id="age" name="age" min="0" required>
+      <label for="phone" id="label-phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="email" id="label-email">Email (optional):</label>
+      <input type="email" id="email" name="email">
+      <label for="picture" id="label-picture">Picture:</label>
+      <input type="file" id="picture" name="picture" accept="image/*">
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <div class="message-box">
+      <p id="message">This is the opening message of the page.</p>
+    </div>
+    <div id="form-result" class="hidden" style="margin-top: 20px; padding: 15px; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px;">
+      <h3 id="result-title">Form Submitted Successfully!</h3>
+      <div id="result-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
