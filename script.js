@@ -1,5 +1,5 @@
 // Configuration - Replace with your Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxlYGnBJrhzAO0cUNUZJkCp5Fb48zT8wT6PkHUibENnj0chDPdKaJFReZSpLc3t-xb_/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw197GWWWMv_4oYicwaTdBgSiNZ7mNdvuFozoCzlCZb8rHgpafYSBcS6kWQ632MR7Y/exec';
 
 // Use localStorage to persist submitted phone numbers
 function getSubmittedPhones() {
