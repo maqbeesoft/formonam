@@ -1,5 +1,5 @@
 // Configuration - Replace with your Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw197GWWWMv_4oYicwaTdBgSiNZ7mNdvuFozoCzlCZb8rHgpafYSBcS6kWQ632MR7Y/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxiH5dXqtumXVrpB_1szEnG1zJsZd3Irifr75Mz_axnqEsPbjyZnolnGO0YVdooot7o/exec';
 
 // Use localStorage to persist submitted phone numbers
 function getSubmittedPhones() {
@@ -125,8 +125,8 @@ async function handleSubmit(event) {
     if (data.age) html += `<p><strong>Age:</strong> ${data.age}</p>`;
     if (data.phone) html += `<p><strong>Phone Number:</strong> ${data.phone}</p>`;
     if (data.email) html += `<p><strong>Email (optional):</strong> ${data.email}</p>`;
-    if (data.picture) html += `<p><strong>Picture:</strong> ${data.picture}</p>`;
-    
+    if (data.picture) html += `<p><img src="${data.picture}" alt="Uploaded Picture"></p>`;
+
     showPopup(`<strong>Form Submitted Successfully!</strong><br>${html}<br><em>Data saved to Google Sheets</em>`);
   } catch (error) {
     // Show error message
