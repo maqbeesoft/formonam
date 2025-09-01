@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw197GWWWMv_4oYicwaTdBgSiNZ7mNdvuFozoCzlCZb8rHgpafYSBcS6kWQ632MR7Y/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwbO8jWDjOwLNth-RWhWLLoPx-YRJXEmmMKtYN5-igzRV7WyOvfN8g61uqGl3J2kSEM/exec';
 
     function getSubmittedPhones() {
       try {
